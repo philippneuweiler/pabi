@@ -1,0 +1,201 @@
+/*************************************************************
+  General
+**************************************************************/
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@font-face {
+	font-family: schrift;
+	src: url(../font/roboto-slab.ttf);
+}
+
+@font-face {
+	font-family: ueberschrift;
+	src: url(../font/oswald.ttf);
+}
+
+main {
+    background-color: rgb(3, 19, 14);
+    min-height: 80vh;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: ueberschrift;
+    font-weight: 1600;
+    line-height: 2.8rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #f9b54e;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+h2 {
+    font-family: ueberschrift;
+    font-weight: 1600;
+    line-height: 2.2rem;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    color: #f9b54e;
+    padding-top: 60px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: ueberschrift;
+    font-weight: 1600;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #f9b54e;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.img {
+    max-width: 440px;
+    margin: auto;
+}
+
+.img img {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+#profil {
+    max-width: 300px;
+    margin: auto;
+    width: 50%;
+}
+
+p, ul, li {
+    font-family: schrift;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.dev {
+    color: #f9b54e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.profession {
+    max-width: 300px;
+    font-size: 0.9rem;
+    margin: auto;
+}
+
+.social {
+    position: relative;
+    display: inline;
+
+}
+
+.social img {
+    max-width: 30px;
+    padding: 10px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+.nathak {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/*************************************************************
+  Akkordion
+**************************************************************/
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 0px;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  transition: 0.4s;
+  font-family: ueberschrift;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.active, .accordion:hover {
+  color: #fff;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+/*************************************************************
+  Buttons
+**************************************************************/
+
+button {
+    cursor: pointer;
+    border: 2px #f9b54e solid;
+    background: #0000;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: schrift;
+    transition-duration: 0.4s;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #f9b54e;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
+button:hover {
+    background: #f9b54e;
+    color: black;
+    border: 2px #f9b54e solid;
+}
