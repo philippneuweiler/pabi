@@ -18,12 +18,17 @@ body {
 
 @font-face {
 	font-family: schrift;
-	src: url(../font/roboto-slab.ttf);
+	src: url(../font/Roboto-Regular.ttf);
 }
 
 @font-face {
 	font-family: ueberschrift;
-	src: url(../font/oswald.ttf);
+	src: url(../font/avenir-next-bold.otf);
+}
+
+@font-face {
+	font-family: light;
+	src: url(../font/Roboto_Condensed-Light.ttf);
 }
 
 main {
@@ -38,7 +43,7 @@ h1 {
     font-family: ueberschrift;
     font-weight: 1600;
     line-height: 2.8rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     letter-spacing: 1px;
     color: #f9b54e;
     margin-top: 10px;
@@ -62,18 +67,29 @@ h3 {
     font-weight: 1600;
     line-height: 1.7rem;
     font-size: 1.3rem;
-    letter-spacing: 1px;
     color: #f9b54e;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.img {
+.img-contact {
+    position: relative;
     max-width: 440px;
     margin: auto;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.img img {
+.contact {
+    position: absolute;
+    top: 5.5rem;
+    left: 50%;
+    z-index: 2;
+    text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.img-contact img {
     width: 100%;
 }
 
@@ -107,8 +123,9 @@ a:hover, a:visited  {
 }
 
 .sub {
-    font-weight: 200;
+    font-weight: 100;
     font-size: 1rem;
+    font-family: light;
 }
 
 .dev {
@@ -144,6 +161,11 @@ a:hover, a:visited  {
 
 .nathak {
     position: relative;
+    margin-bottom: 3rem;
+}
+
+.workshops {
+    position: relative;
     margin-bottom: 2rem;
 }
 
@@ -160,7 +182,7 @@ a:hover, a:visited  {
   transition: 0.4s;
   font-family: ueberschrift;
   line-height: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .active, .accordion:hover {
@@ -193,14 +215,14 @@ button {
     cursor: pointer;
     border: 2px #f9b54e solid;
     background: #0000;
-    padding: 8px;
+    padding: 5px;
     border-radius: 4px;
     font-family: schrift;
     transition-duration: 0.4s;
     font-weight: 600;
     font-size: 1rem;
     color: #f9b54e;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 5px;
     margin-bottom: 5px;
 }
